@@ -1,0 +1,121 @@
+
+
+html,body{
+	width: 100%;
+	height: 100%
+	margin : 0px;
+	padding:0px;
+	overflow-x: hidden;
+
+
+	
+}
+
+.nav-item{
+padding-left: 60px;
+}
+.heading{
+	text-align:center;
+	padding: 10px;
+	background-color: #eeeeee;
+}
+h1{
+	color: #280000;
+}
+#footer{
+	text-align: center;
+	padding: 20px;
+	color: white;
+	background-color: black;
+	
+}
+hr.new{
+	border : 5px solid grey;
+	width: 30px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+h6{
+	color:#aaaaaa;
+}
+.main{
+	padding: 20px;
+	margin: 40px;
+}
+.submain{
+	padding: 20px;
+	margin : 40px;
+}
+
+.pictures{
+	padding: 20px;
+	margin : 40px;
+	
+}
+
+
+.horizontal{
+	display: inline-block;
+	list-style-type: none;
+	line-height:  2 rem;
+}
+.vertical{
+	color: black;
+	background-color:white;
+	font-weight: bold;
+}
+.vertical:hover{
+	color: white;
+	background-color:black;
+	font-weight: bold;
+}
+.inline{
+	display:block;
+}
+.other{
+	margin: 40px;
+}
+/*contact Page */
+.address{
+	text-align: center;
+}
+
+hr.new1{
+	border : 5px solid grey;
+	width: 30px;
+	margin: center;
+	border-radius: 5px;
+	
+}
+
+.sales{
+	margin: 50px;
+	padding:20px;
+}
+
+/* Inquiry Page */
+
+.enquiry{
+	text-align: center;
+	margin-top: 20px;
+	
+}
+
+.form{
+	margin-left: 70px;
+}
+
+.container1{
+	margin-left: 40px;
+	margin-bottom: 20px;
+	margin-right: 25px;
+}
+.information{
+	text-align: center;
+}
+
+#info{
+	margin-left: 40px;
+	
+}

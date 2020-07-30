@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset = "utf-8">
+<link rel="icon" type="image/png" href="Images/logo.png" />
+<title>Clarks Inn</title>
+<link rel = "stylesheet" href = "styles.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+  <nav class="navbar navbar-light bg-light">
+   <img src = "Images/logo.png"><span class="navbar-brand mb-0 h1">Clarks Inn<sub> at Delhi </sub></span>
+</nav>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+	  <a href = "home.html">
+        <button class="btn btn-light" type="button">
+      Home
+  </button>
+  </a>
+      </li>
+      <li class="nav-item">
+        
+		<div class="dropdown">
+         <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       Accomodation
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="stdroom.html">Standard Room</a>
+    <a class="dropdown-item" href="deluxeroom.html">Deluxe Room</a>
+    <a class="dropdown-item" href="executiveroom.html">Executive Room</a>
+  </div>
+</div>
+      </li>
+	  
+	   <li class="nav-item">
+       	<div class="dropdown">
+         <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       Conference & Events
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="regal.html">The Regal</a>
+    <a class="dropdown-item" href="royal.html">The Royal</a>
+    
+  </div>
+</div>
+      </li>
+	  
+	   <li class="nav-item">
+        	<div class="dropdown">
+         <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       Dining
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="samarat.html">Samarat</a>
+    <a class="dropdown-item" href="takshila.html">Takshilla</a>
+    
+  </div>
+</div>
+      </li>
+	  
+	   <li class="nav-item">
+	   <a href = "contact.html">
+        <button class="btn btn-light" type="button">
+     Contacts 
+  </button>
+  </a>
+  
+      </li>
+	   <li class="nav-item">
+	   <a href = "booking.html">
+     <button class="btn btn-light" type="button">
+       Online Booking
+  </button>    
+</a>
+  </li>
+	  </ul>
+</div>
+</nav>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+	</ol>
+	
+	<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/9.jpg" class="d-block w-100" alt="Side View">
+     </div>
+    </div>
+	
+	<h1 class="enquiry">Enquiry </h1>
+	<hr class ="new1">
+	<br>
+	
+	<div class="container">
+	<form onsubmit ="return validation()">
+	<div class="form-group">
+	<label>Name* </label> 
+	<input type="text" name="" id="name" class="form-control">
+	<span id= "nameerror" class="text-danger font-weight-bold"></span>
+	</div>
+	
+	<div class="form-group">
+	<label>Email* </label>
+	<input type="text" name="" id="email" class="form-control">
+	<span id= "emailerror" class="text-danger font-weight-bold"></span>
+	</div>
+	
+	<div class="form-group">
+	<label>Enquiry About</label>
+	<select id="enquirydetail" class="form-control">
+	<option label="Enquiry About">Enquiry About</option>
+  <option label="Room Reservation">Room Reservation</option>
+  <option label="Event Booking">Event Booking</option>
+  <option label="Others">Others</option>
+  
+ </select>
+ <span id= "enquiryerror" class="text-danger font-weight-bold"></span>
+	</div>
+	
+	<div class="form-group">
+	<label>Message* </label>
+	<input type="text" name="" id="message" class="form-control">
+	<span id= "messageerror" class="text-danger font-weight-bold"></span>
+	</div>
+	<br>
+	<input type ="submit" name="" class="btn btn-info">
+	</form>
+	</div>
+	<br>
+	
+	<footer id="footer">
+
+    <i class="social-icon fab fa-facebook-f"></i> &nbsp
+    <i class="social-icon fab fa-twitter"></i> &nbsp
+    <i class="social-icon fab fa-instagram"></i> &nbsp
+    <i class="social-icon fas fa-envelope"></i>
+
+    <p>&copy Copyright 2018 Clarks Inn</p>
+
+  </footer>
+
+
+	<script src="script.js"></script>
+	</body>
+	</html>
